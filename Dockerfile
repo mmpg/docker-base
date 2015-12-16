@@ -2,7 +2,7 @@ FROM golang:1.5.1
 MAINTAINER Héctor Ramón Jiménez <hector0193@gmail.com>
 
 # Install generic dependencies
-RUN apt-get update && apt-get install -y build-essential pkg-config cmake uuid-dev nodejs nginx
+RUN apt-get update && apt-get install -y build-essential pkg-config cmake uuid-dev nodejs nginx npm
 
 # Install libsodium
 RUN curl https://download.libsodium.org/libsodium/releases/libsodium-1.0.5.tar.gz | tar xvz && \
